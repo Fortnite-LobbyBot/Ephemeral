@@ -1,7 +1,7 @@
 {
 	"name": "@fnlb-project/ephemeral",
 	"version": "1.0.0",
-	"description": "FNLB Matchmaking Service",
+	"description": "FNLB XMPP Library",
 	"type": "module",
 	"private": true,
 	"scripts": {
