@@ -8,18 +8,20 @@
 		"build": "bun run build:bundle",
 		"build:bundle": "bun build --target bun --format esm --minify --outdir ./dist/ ./src/index.ts",
 		"start": "bun run build && bun ./dist/index.js",
-		"dev": "NODE_ENV=development bun --hot src/index.ts",
+		"dev": "NODE_ENV=development bun --hot test/index.ts",
 		"lint": "bun run lint:biome && bun run lint:tsc",
 		"lint:biome": "bunx --bun @biomejs/biome check --write .",
 		"lint:tsc": "bun tsc --noEmit"
 	},
 	"author": "FNLB-Project",
 	"dependencies": {
-		"tslib": "^2.6.3"
+		"tslib": "^2.6.3",
+		"uuid": "^10.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.2",
 		"@types/bun": "^1.1.5",
+		"@types/uuid": "^10.0.0",
 		"typescript": "5.5.2"
 	},
 	"peerDependencies": {
