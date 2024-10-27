@@ -16,7 +16,7 @@
 	"author": "FNLB-Project",
 	"dependencies": {
 		"tslib": "^2.6.3",
-		"uuid": "^10.0.0"
+		"uuid": "^11.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.2",
